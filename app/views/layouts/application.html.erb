@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= render 'google_maps' %>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application", type: "module" %>
   </head>
-
   <body>
     <%= yield %>
   </body>

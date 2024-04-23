@@ -14,7 +14,30 @@
  *= require_self
  */
 
+:root {
+  --background: #ddd;
+}
+
 body,
 html {
   height: 100%;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.well {
+  padding: 16px;
+  background: var(--background);
 }
