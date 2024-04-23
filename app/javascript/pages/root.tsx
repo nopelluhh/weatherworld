@@ -5,6 +5,7 @@ import {
   AddressAutocomplete,
   AutocompleteResult,
 } from "../components/address_autocomplete";
+import { Forecast } from "../components/forecast";
 
 export const Root = () => {
   const [selection, setSelection] = useState<AutocompleteResult>();
@@ -13,9 +14,7 @@ export const Root = () => {
       <Header />
       <Stack>
         <AddressAutocomplete onChange={setSelection} />
-        {selection && (
-          <div>Your weather for {selection.zip ?? selection.name}</div>
-        )}
+        {selection && <Forecast selection={selection} />}
       </Stack>
     </>
   );

@@ -56,7 +56,7 @@ export const AddressAutocomplete = ({
 
   return (
     <div ref={inputRef}>
-      <div>Find your address or zip code:</div>
+      <div className="label">Find your address or zip code:</div>
     </div>
   );
 };

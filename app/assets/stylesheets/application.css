@@ -21,10 +21,12 @@
 body,
 html {
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
+#app {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .center {
@@ -40,4 +42,9 @@ h1 {
 .well {
   padding: 16px;
   background: var(--background);
+}
+
+.label {
+  margin: 0 0 8px;
+  font-weight: bold;
 }
