@@ -96,8 +96,13 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    diff-lcs (1.5.1)
     drb (2.2.1)
     erubi (1.12.0)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-net_http (3.1.0)
+      net-http
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.4)
@@ -121,6 +126,8 @@ GEM
     mini_mime (1.1.5)
     minitest (5.22.3)
     mutex_m (0.2.0)
+    net-http (0.4.1)
+      uri
     net-imap (0.4.10)
       date
       net-protocol
@@ -193,6 +200,27 @@ GEM
     reline (0.5.2)
       io-console (~> 0.5)
     rexml (3.2.6)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-rails (6.1.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      railties (>= 6.1)
+      rspec-core (~> 3.13)
+      rspec-expectations (~> 3.13)
+      rspec-mocks (~> 3.13)
+      rspec-support (~> 3.13)
+    rspec-support (3.13.1)
     rubyzip (2.3.2)
     selenium-webdriver (4.19.0)
       base64 (~> 0.2)
@@ -217,6 +245,8 @@ GEM
     timeout (0.4.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    uri (0.13.0)
+    vcr (6.2.0)
     webrick (1.8.1)
     websocket (1.2.10)
     websocket-driver (0.7.6)
@@ -237,13 +267,17 @@ PLATFORMS
 DEPENDENCIES
   capybara
   debug
+  faraday (~> 2.9)
   jsbundling-rails
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.2)
+  rspec
+  rspec-rails (~> 6.1.0)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data
+  vcr
 
 RUBY VERSION
    ruby 3.3.0p0
