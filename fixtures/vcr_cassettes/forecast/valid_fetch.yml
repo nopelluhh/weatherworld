@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pirateweather.net/forecast/J2TWnNoE4AfORIOXAHXJ9AjJSzBOgDKQ/45.52,-122.638?exclude=minutely%2Chourly%2Calerts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit-month:
+      - '10000'
+      ratelimit-reset:
+      - '671237'
+      ratelimit-limit:
+      - '10000'
+      ratelimit-remaining:
+      - '9960'
+      x-ratelimit-remaining-month:
+      - '9960'
+      access-control-allow-origin:
+      - "*"
+      x-amzn-remapped-content-length:
+      - '0'
+      date:
+      - Tue, 23 Apr 2024 05:32:43 GMT
+      x-amzn-trace-id:
+      - root=1-662747fb-64de2f481236f6624b6af9cf;parent=6d0a2b301a6ce752;sampled=0;lineage=8cfbb723:0
+      via:
+      - kong/3.2.2
+      x-amz-executed-version:
+      - '78'
+      x-amzn-requestid:
+      - df3369be-3e86-457d-8a2d-89a078cc3de6
+      access-control-allow-methods:
+      - OPTIONS,POST,GET
+      x-kong-response-latency:
+      - '871'
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude": 45.52, "longitude": -122.63, "timezone": "America/Los_Angeles",
+        "offset": -7.0, "elevation": 167, "currently": {"time": 1713850320, "summary":
+        "Cloudy", "icon": "cloudy", "nearestStormDistance": 0, "nearestStormBearing":
+        0, "precipIntensity": 0.0, "precipProbability": 0.0, "precipIntensityError":
+        0.0, "precipType": "none", "temperature": 54.23, "apparentTemperature": 52.71,
+        "dewPoint": 40.28, "humidity": 0.6, "pressure": 1005.8, "windSpeed": 8.2,
+        "windGust": 12.99, "windBearing": 337, "cloudCover": 1.0, "uvIndex": 0, "visibility":
+        10.0, "ozone": 365.18}, "daily": {"summary": "Rain", "icon": "rain", "data":
+        [{"time": 1713769200, "icon": "cloudy", "summary": "Cloudy", "sunriseTime":
+        1713791524, "sunsetTime": 1713841589, "moonPhase": 0.46, "precipIntensity":
+        0.0, "precipIntensityMax": 0.0, "precipIntensityMaxTime": 1713848400, "precipProbability":
+        0.0, "precipAccumulation": 0.0, "precipType": "none", "temperatureHigh": 74.93,
+        "temperatureHighTime": 1713913200, "temperatureLow": 47.26, "temperatureLowTime":
+        1713870000, "apparentTemperatureHigh": 53.16, "apparentTemperatureHighTime":
+        1713916800, "apparentTemperatureLow": 53.16, "apparentTemperatureLowTime":
+        1713870000, "dewPoint": 39.61, "humidity": 0.54, "pressure": 1005.2, "windSpeed":
+        9.65, "windGust": 14.94, "windGustTime": 1713848400, "windBearing": 338, "cloudCover":
+        1.0, "uvIndex": 0.03, "uvIndexTime": 1713848400, "visibility": 10.0, "temperatureMin":
+        54.91, "temperatureMinTime": 1713848400, "temperatureMax": 54.91, "temperatureMaxTime":
+        1713848400, "apparentTemperatureMin": 53.16, "apparentTemperatureMinTime":
+        1713848400, "apparentTemperatureMax": 53.16, "apparentTemperatureMaxTime":
+        1713848400}, {"time": 1713855600, "icon": "partly-cloudy-day", "summary":
+        "Partly Cloudy", "sunriseTime": 1713877825, "sunsetTime": 1713928067, "moonPhase":
+        0.49, "precipIntensity": 0.0, "precipIntensityMax": 0.0, "precipIntensityMaxTime":
+        1713855600, "precipProbability": 0.0, "precipAccumulation": 0.0, "precipType":
+        "none", "temperatureHigh": 74.93, "temperatureHighTime": 1713913200, "temperatureLow":
+        48.04, "temperatureLowTime": 1713956400, "apparentTemperatureHigh": 70.84,
+        "apparentTemperatureHighTime": 1713913200, "apparentTemperatureLow": 42.76,
+        "apparentTemperatureLowTime": 1713956400, "dewPoint": 36.53, "humidity": 0.44,
+        "pressure": 1004.43, "windSpeed": 7.01, "windGust": 11.83, "windGustTime":
+        1713888000, "windBearing": 184, "cloudCover": 0.73, "uvIndex": 6.83, "uvIndexTime":
+        1713906000, "visibility": 10.0, "temperatureMin": 46.24, "temperatureMinTime":
+        1713877200, "temperatureMax": 74.93, "temperatureMaxTime": 1713913200, "apparentTemperatureMin":
+        42.76, "apparentTemperatureMinTime": 1713877200, "apparentTemperatureMax":
+        70.84, "apparentTemperatureMaxTime": 1713916800}, {"time": 1713942000, "icon":
+        "cloudy", "summary": "Cloudy", "sunriseTime": 1713964127, "sunsetTime": 1714014544,
+        "moonPhase": 0.52, "precipIntensity": 0.0004, "precipIntensityMax": 0.0014,
+        "precipIntensityMaxTime": 1714003200, "precipProbability": 0.02, "precipAccumulation":
+        0.0091, "precipType": "rain", "temperatureHigh": 65.26, "temperatureHighTime":
+        1713999600, "temperatureLow": 47.54, "temperatureLowTime": 1714028400, "apparentTemperatureHigh":
+        63.59, "apparentTemperatureHighTime": 1713999600, "apparentTemperatureLow":
+        45.55, "apparentTemperatureLowTime": 1714042800, "dewPoint": 40.33, "humidity":
+        0.61, "pressure": 1007.92, "windSpeed": 2.18, "windGust": 6.01, "windGustTime":
+        1713942000, "windBearing": 243, "cloudCover": 0.87, "uvIndex": 6.44, "uvIndexTime":
+        1713988800, "visibility": 10.0, "temperatureMin": 45.91, "temperatureMinTime":
+        1713963600, "temperatureMax": 65.26, "temperatureMaxTime": 1713999600, "apparentTemperatureMin":
+        45.55, "apparentTemperatureMinTime": 1713963600, "apparentTemperatureMax":
+        63.59, "apparentTemperatureMaxTime": 1713999600}, {"time": 1714028400, "icon":
+        "rain", "summary": "Rain", "sunriseTime": 1714050430, "sunsetTime": 1714101021,
+        "moonPhase": 0.55, "precipIntensity": 0.0203, "precipIntensityMax": 0.0333,
+        "precipIntensityMaxTime": 1714089600, "precipProbability": 1.0, "precipAccumulation":
+        0.4673, "precipType": "rain", "temperatureHigh": 48.17, "temperatureHighTime":
+        1714078800, "temperatureLow": 46.94, "temperatureLowTime": 1714125600, "apparentTemperatureHigh":
+        49.37, "apparentTemperatureHighTime": 1714050000, "apparentTemperatureLow":
+        43.23, "apparentTemperatureLowTime": 1714100400, "dewPoint": 45.15, "humidity":
+        0.92, "pressure": 999.51, "windSpeed": 5.91, "windGust": 16.5, "windGustTime":
+        1714104000, "windBearing": 174, "cloudCover": 1.0, "uvIndex": 0.65, "uvIndexTime":
+        1714071600, "visibility": 9.02, "temperatureMin": 46.04, "temperatureMinTime":
+        1714057200, "temperatureMax": 48.24, "temperatureMaxTime": 1714035600, "apparentTemperatureMin":
+        43.23, "apparentTemperatureMinTime": 1714057200, "apparentTemperatureMax":
+        49.37, "apparentTemperatureMaxTime": 1714028400}, {"time": 1714114800, "icon":
+        "rain", "summary": "Rain", "sunriseTime": 1714136734, "sunsetTime": 1714187498,
+        "moonPhase": 0.58, "precipIntensity": 0.0199, "precipIntensityMax": 0.0245,
+        "precipIntensityMaxTime": 1714132800, "precipProbability": 0.89, "precipAccumulation":
+        0.458, "precipType": "rain", "temperatureHigh": 49.66, "temperatureHighTime":
+        1714158000, "temperatureLow": 42.41, "temperatureLowTime": 1714215600, "apparentTemperatureHigh":
+        49.68, "apparentTemperatureHighTime": 1714172400, "apparentTemperatureLow":
+        43.67, "apparentTemperatureLowTime": 1714215600, "dewPoint": 46.93, "humidity":
+        0.96, "pressure": 998.59, "windSpeed": 5.21, "windGust": 14.3, "windGustTime":
+        1714114800, "windBearing": 203, "cloudCover": 0.99, "uvIndex": 1.54, "uvIndexTime":
+        1714158000, "visibility": 9.53, "temperatureMin": 46.32, "temperatureMinTime":
+        1714194000, "temperatureMax": 49.82, "temperatureMaxTime": 1714179600, "apparentTemperatureMin":
+        43.67, "apparentTemperatureMinTime": 1714194000, "apparentTemperatureMax":
+        49.68, "apparentTemperatureMaxTime": 1714183200}, {"time": 1714201200, "icon":
+        "rain", "summary": "Rain", "sunriseTime": 1714223039, "sunsetTime": 1714273975,
+        "moonPhase": 0.62, "precipIntensity": 0.0048, "precipIntensityMax": 0.0065,
+        "precipIntensityMaxTime": 1714251600, "precipProbability": 0.32, "precipAccumulation":
+        0.1111, "precipType": "rain", "temperatureHigh": 55.95, "temperatureHighTime":
+        1714251600, "temperatureLow": 44.59, "temperatureLowTime": 1714294800, "apparentTemperatureHigh":
+        53.1, "apparentTemperatureHighTime": 1714255200, "apparentTemperatureLow":
+        41.27, "apparentTemperatureLowTime": 1714284000, "dewPoint": 40.28, "humidity":
+        0.77, "pressure": 1002.56, "windSpeed": 4.61, "windGust": 8.16, "windGustTime":
+        1714273200, "windBearing": 203, "cloudCover": 0.97, "uvIndex": 5.05, "uvIndexTime":
+        1714244400, "visibility": 10.0, "temperatureMin": 42.41, "temperatureMinTime":
+        1714215600, "temperatureMax": 55.95, "temperatureMaxTime": 1714251600, "apparentTemperatureMin":
+        41.27, "apparentTemperatureMinTime": 1714215600, "apparentTemperatureMax":
+        53.1, "apparentTemperatureMaxTime": 1714255200}, {"time": 1714287600, "icon":
+        "rain", "summary": "Rain", "sunriseTime": 1714309345, "sunsetTime": 1714360451,
+        "moonPhase": 0.65, "precipIntensity": 0.008, "precipIntensityMax": 0.0123,
+        "precipIntensityMaxTime": 1714327200, "precipProbability": 0.54, "precipAccumulation":
+        0.1838, "precipType": "rain", "temperatureHigh": 55.72, "temperatureHighTime":
+        1714338000, "temperatureLow": 39.87, "temperatureLowTime": 1714388400, "apparentTemperatureHigh":
+        54.9, "apparentTemperatureHighTime": 1714338000, "apparentTemperatureLow":
+        41.05, "apparentTemperatureLowTime": 1714388400, "dewPoint": 42.86, "humidity":
+        0.83, "pressure": 1003.1, "windSpeed": 6.69, "windGust": 14.68, "windGustTime":
+        1714338000, "windBearing": 205, "cloudCover": 0.94, "uvIndex": 5.41, "uvIndexTime":
+        1714338000, "visibility": 10.0, "temperatureMin": 43.37, "temperatureMinTime":
+        1714366800, "temperatureMax": 55.72, "temperatureMaxTime": 1714338000, "apparentTemperatureMin":
+        41.05, "apparentTemperatureMinTime": 1714366800, "apparentTemperatureMax":
+        54.9, "apparentTemperatureMaxTime": 1714338000}, {"time": 1714374000, "icon":
+        "rain", "summary": "Rain", "sunriseTime": 1714395652, "sunsetTime": 1714446928,
+        "moonPhase": 0.68, "precipIntensity": 0.0088, "precipIntensityMax": 0.0149,
+        "precipIntensityMaxTime": 1714424400, "precipProbability": 0.64, "precipAccumulation":
+        0.2016, "precipType": "rain", "temperatureHigh": 52.92, "temperatureHighTime":
+        1714424400, "temperatureLow": 43.26, "temperatureLowTime": 1714474800, "apparentTemperatureHigh":
+        52.0, "apparentTemperatureHighTime": 1714431600, "apparentTemperatureLow":
+        36.25, "apparentTemperatureLowTime": 1714467600, "dewPoint": 40.96, "humidity":
+        0.83, "pressure": 1004.45, "windSpeed": 4.88, "windGust": 9.76, "windGustTime":
+        1714453200, "windBearing": 183, "cloudCover": 0.84, "uvIndex": 4.35, "uvIndexTime":
+        1714424400, "visibility": 10.0, "temperatureMin": 38.7, "temperatureMinTime":
+        1714392000, "temperatureMax": 52.92, "temperatureMaxTime": 1714424400, "apparentTemperatureMin":
+        36.25, "apparentTemperatureMinTime": 1714392000, "apparentTemperatureMax":
+        52.0, "apparentTemperatureMaxTime": 1714435200}]}, "flags": {"sources": ["ETOPO1",
+        "gfs", "gefs", "hrrrsubh", "hrrr"], "sourceTimes": {"hrrr_0-18": "2024-04-23
+        03:00:00", "hrrr_subh": "2024-04-23 03:00:00", "hrrr_18-48": "2024-04-23 00:00:00",
+        "gfs": "2024-04-23 00:00:00", "gefs": "2024-04-22 18:00:00"}, "nearest-station":
+        0, "units": "us", "version": "V1.5.6"}}'
+  recorded_at: Tue, 23 Apr 2024 05:32:43 GMT
+recorded_with: VCR 6.2.0
