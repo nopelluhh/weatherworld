@@ -1,24 +1,9 @@
-# README
+## Getting Started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is designed for local use via `rails server`. The included API keys are allow-listed only for 127.0.0.1, so the app should be accessed at 127.0.0.1:3000 (or whichever port is provided to the server command).
 
-Things you may want to cover:
+This app intentionally will not work without a Rails master key. Please reach out to me for access.
 
-* Ruby version
+## Testing
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Tests can be run via `bundle exec rspec ./spec`.
